@@ -49,7 +49,7 @@ def main():
         if not blank_gig_category_rows.empty:
             # List of available gig categories
             gig_categories = [
-                "RE", "Tutoring", "Dog Sitting", "General",
+                "Gig1", "Gig2", "Gig3", "General",
                 "Personal"
             ]
 

@@ -1,44 +1,51 @@
 # Account Helper Project
 
-This script allows users to process financial data exported from various banks and categorize transactions based on predefined criteria. The supported banks include AMEX, Discover, Chase, and Citi.
+This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on predefined criteria. Supported banks include AMEX, Discover, Chase, and Citi.
 
-The final exported CSV file will have the following columns:
-- Date: Date of the transaction
-- Description: Description of the transaction
-- Amount: Amount of the transaction
-- Category: Category of the transaction
-- Tax Category: Tax category based on predefined criteria
-- Source: Source bank of the transaction
-- GIG: Additional categorization helpful for managing multiple businesses, such as photography or consulting.
+## Features
 
-## How to run the project locally:
-Step 1: Install the latest Python3 in MacOS
-Step 2: Check if pip3 and python3 are correctly installed.
-### `python3 --version`
-### `pip3 --version`
-Step 3: Upgrade your pip to avoid errors during installation.
-### `pip3 install --upgrade pip`
-Step 4: Enter the following command to install Pandas using pip3.
-### `pip3 install pandas`
-Step 5: Open terminal and run the Accounting Helper
-### `python3 Accounting_Helper.py`
-Step 6: FINISH THIS WITH FILE PAHT EXPORT AND EXPLAIN that you may then read it into tax and gig categorizer program
+- **Data Processing**: The script processes financial data exported from different banks.
+- **Categorization**: Transactions are categorized for tax purposes based on predefined criteria such as description and category.
+- **Export to CSV**: The processed data is exported to a CSV file with detailed columns.
+- **Interactive Interface**: Users can interactively select the bank and provide file paths for processing.
 
-## Functions:
-- `select_bank()`: Allows users to select the bank from which the data was exported.
-- `process_file(filename, selected_bank)`: Processes the financial data based on the selected bank.
-- `export_to_csv(df)`: Exports the processed data to a CSV file named "accounting_mod.csv".
-- `main()`: Controls the main flow of the script, prompting users for file paths and bank selection.
+## Usage
 
-To use the script, users need to provide the file path of the financial data exported from their bank. The script will then guide users through the process of categorizing transactions and export the modified data to a CSV file.
+### Prerequisites
 
-**Note:** Ensure the financial data files are in CSV format and follow the expected structure for accurate processing.
+1. **Python 3**: Ensure you have Python 3 installed on your system.
+2. **Dependencies**: Pandas library is required for running the script. If you haven't installed it yet, you can do so using pip:
+### `pip install pandas`
 
----
 
-This script allows the user to interactively process and modify accounting data stored in CSV format, complementing the "Accounting Helper" script. It prompts the user to input the file path of the CSV file containing accounting data processed by another program. The script reads the data into a pandas DataFrame, checks for blank values in the 'Tax Category' and 'GIG' columns, prompts the user to input missing tax and gig categories, sorts the DataFrame, and exports the modified data to a new CSV file.
+### Running the Script
 
-**Columns in the final exported CSV file:**
+1. **Clone Repository**: Clone the repository containing the script.
+2. **Navigate to Directory**: Open terminal and navigate to the directory containing the script.
+3. **Run Accounting Helper Script**: Execute the script by running:
+### `python3 accounting_helper.py`
+4. **Follow Instructions**: Provide the file path of the financial data exported from your bank and select the bank.
+5. **Exported Data**: Once processed, the modified data will be exported to a CSV file named "accounting_mod.csv" in your Documents folder.
+
+### Optional: Additional Step
+
+After exporting the CSV file, optionally run the Tax and Gig Categorizer script to categorize transactions with blank tax and gig categories. 
+
+#### Tax and Gig Categorizer Script
+
+1. **Run Script**: Execute the script by running:
+### `python3 tax_and_gig_categorizer.py`
+
+2. **Follow Instructions**: Follow the on-screen instructions to categorize transactions with blank tax and gig categories.
+
+### Note
+
+Ensure that the financial data files are in CSV format and adhere to the expected structure for accurate processing. It's recommended to export the data directly from your bank without any modifications before running the script.
+
+This script facilitates interactive processing and modification of accounting data stored in CSV format, complementing the "Accounting Helper" script. It prompts the user to input the file path of the CSV file containing accounting data processed by another program. The script reads the data into a pandas DataFrame, checks for blank values in the 'Tax Category' and 'GIG' columns, prompts the user to input missing tax and gig categories, sorts the DataFrame, and exports the modified data to a new CSV file.
+
+## Columns in the Exported CSV File
+
 - Date: Date of the transaction
 - Description: Description of the transaction
 - Amount: Amount of the transaction
@@ -46,3 +53,12 @@ This script allows the user to interactively process and modify accounting data 
 - Tax Category: Tax category assigned to the transaction
 - Source: Source bank of the transaction
 - GIG: Category assigned to the transaction (useful for businesses with multiple categories)
+
+## Functions
+
+- `select_bank()`: Allows users to select the bank from which the data was exported.
+- `process_file(filename, selected_bank)`: Processes the financial data based on the selected bank.
+- `export_to_csv(df)`: Exports the processed data to a CSV file named "accounting_mod.csv".
+- `main()`: Controls the main flow of the script, prompting users for file paths and bank selection.
+
+
