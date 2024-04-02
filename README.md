@@ -1,6 +1,6 @@
 # Account Helper Project
 
-This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on predefined criteria. Supported tax categories include: Advertising, Car Repair, Charity, Coaching/Educational, Credential Renewal, Entertainment, Equipment Rentals, Equipment Repairs, Gas, Interest, Legal & Professional, Meals, Medical, Meetings, Office expense, Parking, Professional Memberships & Dues, Professional Research, Promotional, Supplies, Telephone, Trade Publications, Travel, and Web Subscriptions. Supported banks include AMEX, Discover, Chase, and Citi. 
+This Python script enables users to process financial data exported from various banks and categit add image.png orize transactions for tax purposes based on predefined criteria. Supported tax categories include: Advertising, Car Repair, Charity, Coaching/Educational, Credential Renewal, Entertainment, Equipment Rentals, Equipment Repairs, Gas, Interest, Legal & Professional, Meals, Medical, Meetings, Office expense, Parking, Professional Memberships & Dues, Professional Research, Promotional, Supplies, Telephone, Trade Publications, Travel, and Web Subscriptions. Supported banks include AMEX, Discover, Chase, and Citi. 
 
 ## Usage
 
@@ -21,7 +21,7 @@ This Python script enables users to process financial data exported from various
     python3 accounting_helper.py
     ```
 4. **Follow Instructions**: Provide the file path of the financial data exported from your bank and select the bank.
-    <img src="Account_Helper_Run.png" alt="Screenshot of the Accounting Helper script running" width="500" height="300">
+    ![Image Description](/Account_Helper_Run.png)
 5. **Exported Data**: Once processed, the modified data will be exported to a CSV file named "accounting_mod.csv" in your Documents folder.
     Note: The data shown below has been whited out for privacy purposes. 
     <img src="Modified_Data_Blanked.png" alt="Screenshot of the exported data" width="500" height="300">
