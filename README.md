@@ -21,7 +21,7 @@ This Python script enables users to process financial data exported from various
     python3 accounting_helper.py
     ```
 4. **Follow Instructions**: Provide the file path of the financial data exported from your bank and select the bank.
-    ![Image Description](/Account_Helper_Run.png)
+    ![Screenshot of the Accounting Helper scipt running](/Account_Helper_Run.png)
 5. **Exported Data**: Once processed, the modified data will be exported to a CSV file named "accounting_mod.csv" in your Documents folder.
     Note: The data shown below has been whited out for privacy purposes. 
     <img src="Modified_Data_Blanked.png" alt="Screenshot of the exported data" width="500" height="300">
