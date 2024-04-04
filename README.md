@@ -1,40 +1,7 @@
 # Account Helper Project
 
 This Python script enables users to process financial data exported from various banks and categit add image.png orize transactions for tax purposes based on predefined criteria. Supported tax categories include: Advertising, Car Repair, Charity, Coaching/Educational, Credential Renewal, Entertainment, Equipment Rentals, Equipment Repairs, Gas, Interest, Legal & Professional, Meals, Medical, Meetings, Office expense, Parking, Professional Memberships & Dues, Professional Research, Promotional, Supplies, Telephone, Trade Publications, Travel, and Web Subscriptions. Supported banks include AMEX, Discover, Chase, and Citi. 
-
-## Usage
-
-### Prerequisites
-
-1. **Python 3**: Ensure you have Python 3 installed on your system.
-2. **Dependencies**: Pandas library is required for running the script. If you haven't installed it yet, you can do so using pip:
-    ```bash
-    pip install pandas
-    ```
-
-### Running the Script
-
-1. **Clone Repository**: Clone the repository containing the script.
-2. **Navigate to Directory**: Open terminal and navigate to the directory containing the script.
-3. **Run Accounting Helper Script**: Execute the script by running:
-    ```bash
-    python3 accounting_helper.py
-    ```
-4. **Follow Instructions**: Provide the file path of the financial data exported from your bank and select the bank.
-    ![Screenshot of the Accounting Helper scipt running](/Account_Helper_Run.png)
-5. **Exported Data**: Once processed, the modified data will be exported to a CSV file named "accounting_mod.csv" in your Documents folder.
-    Note: The data shown below has been whited out for privacy purposes. 
-    <img src="Modified_Data_Blanked.png" alt="Screenshot of the exported data" width="500" height="300">
-6. **Optional Step**: Run Tax and Gig Categorize Script**: After exporting the CSV file, optionally run the Tax and Gig Categorizer script to categorize transactions with blank tax and gig categories. 
-    - **Execution**: Execute the script by running:
-      ```bash
-      python3 tax_and_gig_categorizer.py
-      ```
-    - **Follow Instructions**: Follow the on-screen instructions to categorize transactions with blank tax and gig categories.
-
-        <img src="Tax_and_Gig_Categorizer_Run.png" alt="Screenshot of the Tax and Gig Categorizer scipt running" width="500" height="300">
-
-## Features
+## Key Features
 
 - **Data Processing**: The script processes financial data exported as a .csv file from different banks (AMEX, Discover, Chase, and/or Citi)
 
@@ -80,4 +47,39 @@ This Python script enables users to process financial data exported from various
 
 - **Interactive Interface**: Users can interactively select the bank and provide file paths for processing.
 - **Optional Tax and Gig Categorizer Script**: This script facilitates interactive processing and modification of accounting data stored in CSV format, complementing the "Accounting Helper" script. It prompts the user to input the file path of the CSV file containing accounting data "accounting_mod.csv". The script reads the data into a pandas DataFrame, checks for blank values in the 'Tax Category' and 'GIG' columns, prompts the user to input missing tax and gig categories, sorts the DataFrame, and exports the modified data to a new CSV file with "_mod.csv" appended to the file name.
+
+
+## How To Use
+
+### Prerequisites
+
+1. **Python 3**: Ensure you have Python 3 installed on your system.
+2. **Dependencies**: Pandas library is required for running the script. If you haven't installed it yet, you can do so using pip:
+    ```bash
+    pip install pandas
+    ```
+
+### Running the Script
+
+1. **Clone Repository**: Clone the repository containing the script.
+2. **Navigate to Directory**: Open terminal and navigate to the directory containing the script.
+3. **Run Accounting Helper Script**: Execute the script by running:
+    ```bash
+    python3 accounting_helper.py
+    ```
+4. **Follow Instructions**: Provide the file path of the financial data exported from your bank and select the bank.
+
+    ![Screenshot of the Accounting Helper scipt running](/Accounting_Helper_Run.png)
+5. **Exported Data**: Once processed, the modified data will be exported to a CSV file named "accounting_mod.csv" in your Documents folder.
+    Note: The data shown below has been whited out for privacy purposes. 
+
+    <img src="Modified_Data_Blanked.png" alt="Screenshot of the exported data" width="500" height="300">
+6. **Optional Step**: Run Tax and Gig Categorize Script**: After exporting the CSV file, optionally run the Tax and Gig Categorizer script to categorize transactions with blank tax and gig categories. 
+    - **Execution**: Execute the script by running:
+      ```bash
+      python3 tax_and_gig_categorizer.py
+      ```
+    - **Follow Instructions**: Follow the on-screen instructions to categorize transactions with blank tax and gig categories.
+
+        <img src="Tax_and_Gig_Categorizer_Run.png" alt="Screenshot of the Tax and Gig Categorizer scipt running" width="500" height="300">
 
