@@ -3,8 +3,7 @@
 [Overview](#overview) | [Key Features](#key-features) | [How To Use](#how-to-use)
 
 ## Overview
-This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on [Predefined Categorization Rules for Transactions](#predefined-categorization-rules-for-transactions)
-. Supported banks include: AMEX, Discover, Chase, and Citi. 
+This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on predefined categorization rules for transactions. Supported banks include: AMEX, Discover, Chase, and Citi. 
 
 ## Key Features
 
@@ -12,7 +11,7 @@ This Python script enables users to process financial data exported from various
 
     Note: Ensure that the financial data files are in CSV format and adhere to the expected structure for accurate processing. It's recommended to export the data directly from your bank without any modifications before running the script.
 
-- **Supported Tax Categories**:
+- **Supported Tax Categories**: The script allows the user to categorize transactions into one of the following tax categories:
 
     - Advertising
     - Car Repair
@@ -39,7 +38,7 @@ This Python script enables users to process financial data exported from various
     - Travel
     - Web Subscriptions
 
-- **Predefined Categorization Rules for Transactions**: Transactions are categorized for tax purposes based on predefined criteria, such as description and category.
+- **Predefined Categorization Rules for Transactions**: Transactions are automatically categorized for tax purposes based on predefined criteria, such as description and category.
 
     AMEX categorization rules:
     - If the category contains "Restaurant", the expense is categorized as Meals for tax purposes.
