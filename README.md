@@ -1,6 +1,6 @@
 # Accounting Helper Project
 
-This Python script enables users to process financial data exported from various banks and categit add image.png orize transactions for tax purposes based on predefined criteria. Supported tax categories include: Advertising, Car Repair, Charity, Coaching/Educational, Credential Renewal, Entertainment, Equipment Rentals, Equipment Repairs, Gas, Interest, Legal & Professional, Meals, Medical, Meetings, Office expense, Parking, Professional Memberships & Dues, Professional Research, Promotional, Supplies, Telephone, Trade Publications, Travel, and Web Subscriptions. Supported banks include AMEX, Discover, Chase, and Citi. 
+This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on predefined criteria. Supported tax categories include: Advertising, Car Repair, Charity, Coaching/Educational, Credential Renewal, Entertainment, Equipment Rentals, Equipment Repairs, Gas, Interest, Legal & Professional, Meals, Medical, Meetings, Office expense, Parking, Professional Memberships & Dues, Professional Research, Promotional, Supplies, Telephone, Trade Publications, Travel, and Web Subscriptions. Supported banks include AMEX, Discover, Chase, and Citi. 
 ## Key Features
 
 - **Data Processing**: The script processes financial data exported as a .csv file from different banks (AMEX, Discover, Chase, and/or Citi)
