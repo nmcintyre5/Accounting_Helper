@@ -1,13 +1,45 @@
 # Accounting Helper Project
 
-This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on predefined criteria. Supported tax categories include: Advertising, Car Repair, Charity, Coaching/Educational, Credential Renewal, Entertainment, Equipment Rentals, Equipment Repairs, Gas, Interest, Legal & Professional, Meals, Medical, Meetings, Office expense, Parking, Professional Memberships & Dues, Professional Research, Promotional, Supplies, Telephone, Trade Publications, Travel, and Web Subscriptions. Supported banks include AMEX, Discover, Chase, and Citi. 
+[Overview](#overview) | [Key Features](#key-features) | [How To Use](#how-to-use)
+
+## Overview
+This Python script enables users to process financial data exported from various banks and categorize transactions for tax purposes based on [Predefined Categorization Rules for Transactions](#predefined-categorization-rules-for-transactions)
+. Supported banks include: AMEX, Discover, Chase, and Citi. 
+
 ## Key Features
 
 - **Data Processing**: The script processes financial data exported as a .csv file from different banks (AMEX, Discover, Chase, and/or Citi)
 
     Note: Ensure that the financial data files are in CSV format and adhere to the expected structure for accurate processing. It's recommended to export the data directly from your bank without any modifications before running the script.
 
-- **Categorization**: Transactions are categorized for tax purposes based on predefined criteria, such as description and category.
+- **Supported Tax Categories**:
+
+    - Advertising
+    - Car Repair
+    - Charity
+    - Coaching/Educational
+    - Credential Renewal
+    - Entertainment
+    - Equipment Rentals
+    - Equipment Repairs
+    - Gas
+    - Interest
+    - Legal & Professional
+    - Meals
+    - Medical
+    - Meetings
+    - Office expense
+    - Parking
+    - Professional Memberships & Dues
+    - Professional Research
+    - Promotional
+    - Supplies
+    - Telephone
+    - Trade Publications
+    - Travel
+    - Web Subscriptions
+
+- **Predefined Categorization Rules for Transactions**: Transactions are categorized for tax purposes based on predefined criteria, such as description and category.
 
     AMEX categorization rules:
     - If the category contains "Restaurant", the expense is categorized as Meals for tax purposes.
@@ -34,7 +66,7 @@ This Python script enables users to process financial data exported from various
     - If the description contains COSTCO GAS, the expense is categorized as Gas for tax purposes.
     - Otherwise, the expense is categorized as Supplies for tax purposes.
 
-- **Export to CSV**: The processed data is exported to a CSV file with detailed columns. It will be saved in the same directory where the Python script is executed.
+- **Export to CSV**: The processed data is exported to a CSV file with detailed columns (see below). It will be saved in the same directory where the Python script is executed.
 
     Columns in the exported CSV file:
     - Date: Date of the transaction
@@ -43,7 +75,7 @@ This Python script enables users to process financial data exported from various
     - Category: Category of the transaction
     - Tax Category: Tax category assigned to the transaction
     - Source: Source bank of the transaction
-    - GIG: Category assigned to the transaction (useful for businesses with multiple categories)
+    - GIG: Category assigned to the transaction (useful for those with multiple revenue streams)
 
 - **Interactive Interface**: Users can interactively select the bank and provide file paths for processing.
 - **Optional Tax and Gig Categorizer Script**: This script facilitates interactive processing and modification of accounting data stored in CSV format, complementing the "Accounting Helper" script. It prompts the user to input the file path of the CSV file containing accounting data "accounting_mod.csv". The script reads the data into a pandas DataFrame, checks for blank values in the 'Tax Category' and 'GIG' columns, prompts the user to input missing tax and gig categories, sorts the DataFrame, and exports the modified data to a new CSV file with "_mod.csv" appended to the file name.

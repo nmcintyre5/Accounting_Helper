@@ -31,7 +31,7 @@ def main():
 
             for index, row in blank_tax_category_rows.iterrows():
                 while True:
-                    user_input = input(f"Enter the number corresponding to the tax category for the transaction:\n'{row['Description']} \nAmount: {row['Amount']}: ")
+                    user_input = input(f"Enter the number corresponding to the tax category for the transaction:\n{row['Description']} \nAmount: ${row['Amount']} \n")
                     try:
                         selected_category_index = int(user_input)
                         if 1 <= selected_category_index <= len(tax_categories):
