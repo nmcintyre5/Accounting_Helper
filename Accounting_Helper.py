@@ -52,10 +52,18 @@ def process_file(filename, selected_bank):
         def update_tax_category(category, description):
             if 'Restaurant' in category:
                 return 'Meals'
-            elif 'Parking' in category:
-                return 'Parking'
             elif 'Supplies' in category:
                 return 'Supplies'
+            elif 'Travel' in category:
+                return 'Travel'
+            elif 'Transportation' in category:
+                return 'Travel'
+            elif 'Parking' in category:
+                return 'Parking'
+            elif 'Health Care Services' in category:
+                return 'Medical'
+            elif 'Entertainment' in category:
+                return 'Entertainment'
             elif 'NYTimes.com' in description:
                 return 'Trade Publications'
             elif 'DMV' in description:
@@ -66,6 +74,8 @@ def process_file(filename, selected_bank):
                 return 'Parking'
             elif 'WALMART.COM' in description:
                 return 'Web Subscriptions'
+            elif 'INSURANCE' in description:
+                return 'Insurance'
             else:
                 return ''
 
